@@ -13,7 +13,7 @@ def index():
     return "Hello World!"
 
 
-# A simple route vulnerable to SSRF attack.
+# A simple route which is vulnerable to SSRF attack.
 # On normal usage, it uses an API service to get the server's public IP, this demonstrates outgoing connections from a web server
 # Extra read: https://portswigger.net/web-security/ssrf
 @app.route('/public_ip', methods=['GET'])

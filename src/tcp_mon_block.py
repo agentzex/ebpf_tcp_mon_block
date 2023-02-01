@@ -154,7 +154,7 @@ def parse_verbose_event(cpu, data, size):
 
 
 
-parser = argparse.ArgumentParser(description="Monitor given PIDs and block outgoing connections to all addresses initiated from them, unless they were listed in allow_list.json")
+parser = argparse.ArgumentParser(description="Monitor given PIDs and block outgoing connections to all addresses initiated from them, unless they are listed in allow_list.json")
 parser.add_argument("-i", "--interface", help="Network interface name to monitor traffic on", required=True, type=str)
 parser.add_argument("-v", "--verbose", action="store_true", help="Set verbose output")
 args = parser.parse_args()
