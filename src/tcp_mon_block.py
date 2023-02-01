@@ -1,3 +1,15 @@
+# author: https://github.com/agentzex
+#
+# tcp_mon_block.py - uses netlink TC, kernel tracepoints and kprobes to monitor outgoing connections from given PIDs
+# and block connections to all addresses initiated from them, unless they are listed in allow_list
+
+# outputs blocked connections attempts from monitored processes
+# Usage:
+#   python3 tcp_mon_block.py -i network_interface_name
+#   python3 tcp_mon_block.py -v -i network_interface_name (-v --verbose - will output all connections attempts, including allowed ones)
+#
+
+
 from bcc import BPF
 import pyroute2
 import socket

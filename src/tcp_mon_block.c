@@ -1,3 +1,9 @@
+/*author: https://github.com/agentzex
+
+tcp_mon_block.c - uses netlink TC, kernel tracepoints and kprobes to monitor outgoing connections from given PIDs
+and block connections to all addresses initiated from them, unless they are listed in allow_list
+*/
+
 #include <uapi/linux/bpf.h>
 #include <uapi/linux/ptrace.h>
 #include <linux/tcp.h>
