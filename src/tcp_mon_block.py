@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # author: https://github.com/agentzex
 #
 # tcp_mon_block.py - uses netlink TC, kernel tracepoints and kprobes to monitor outgoing connections from given PIDs
