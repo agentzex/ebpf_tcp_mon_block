@@ -1,6 +1,6 @@
 # eBPF tcp_mon_block
 
-*You can also find this under BCC project - https://github.com/iovisor/bcc/tree/master/examples/networking/tcp_mon_block
+*You can also find this tool under BCC project - https://github.com/iovisor/bcc/tree/master/examples/networking/tcp_mon_block
 
 This eBPF program uses netlink TC, kernel tracepoints and kprobes to monitor outgoing connections from given PIDs (usually HTTP web servers) and block connections to all addresses initiated from them (acting like an in-process firewall), unless they are listed in allow_list.json 
 
